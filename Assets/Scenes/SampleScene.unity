@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &32372671
 RectTransform:
   m_ObjectHideFlags: 0
@@ -672,7 +672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &595571011
 RectTransform:
   m_ObjectHideFlags: 0
@@ -736,7 +736,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 595571013}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1431115540}
+        m_TargetAssemblyTypeName: TurretButtonScript, Assembly-CSharp
+        m_MethodName: ConstructTurret
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7379939982135893926, guid: 62d035dfd7330614b8b71bab5d968075, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &595571013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,7 +805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &663323709
 RectTransform:
   m_ObjectHideFlags: 0
@@ -982,7 +994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1016653578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1103,7 +1115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1207968534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1224,7 +1236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1211917342
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1288,7 +1300,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1211917344}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1431115540}
+        m_TargetAssemblyTypeName: TurretButtonScript, Assembly-CSharp
+        m_MethodName: ConstructTurret
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5877353941181161787, guid: 7c541293abea62a43abe9fbb6e321033, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1211917344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1367,8 +1391,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1431115539}
-  - component: {fileID: 1431115540}
   - component: {fileID: 1431115541}
+  - component: {fileID: 1431115540}
   m_Layer: 5
   m_Name: Turret Buttons Handler
   m_TagString: Untagged
@@ -1416,7 +1440,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0427d0a4a9a383f42bccb0787c913830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turretButtons: []
+  turretButtons:
+  - {fileID: 1849572982}
+  - {fileID: 595571012}
+  - {fileID: 1211917343}
+  - {fileID: 32372672}
+  - {fileID: 2050422624}
+  - {fileID: 663323710}
+  - {fileID: 1207968535}
+  - {fileID: 1016653579}
+  unlocks: 0100000001000000010000000100000001000000010000000100000001000000
 --- !u!95 &1431115541
 Animator:
   serializedVersion: 5
@@ -1515,7 +1548,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -1659717523, guid: 626cbf3eb3209364ab966cbf41b0c2e1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1535,8 +1568,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499905804}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 4.5, z: 0}
+  m_LocalScale: {x: 14.285715, y: 14.285715, z: 14.285715}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1829104578}
@@ -1675,18 +1708,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0114655495, y: -0.00000011920929}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 10.59, y: 5.48}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 10.593329, y: 5.456664}
   m_EdgeRadius: 0
 --- !u!212 &1829104577
 SpriteRenderer:
@@ -1728,8 +1761,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -1711310456, guid: 2d62ee796acaa4a47a7288ed14e69d91, type: 3}
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 21300000, guid: 55536aa45e3138549b49d8147270ecbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1748,8 +1781,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829104574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.73, y: -2.18, z: 0}
-  m_LocalScale: {x: 4.8, y: 4.8, z: 4.8}
+  m_LocalPosition: {x: 3.44, y: -2.13, z: 0}
+  m_LocalScale: {x: 0.315, y: 0.315, z: 0.315}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1499905807}
@@ -1787,7 +1820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1849572981
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1851,7 +1884,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1849572983}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1431115540}
+        m_TargetAssemblyTypeName: TurretButtonScript, Assembly-CSharp
+        m_MethodName: ConstructTurret
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 5877353941181161787, guid: 7c541293abea62a43abe9fbb6e321033, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1849572983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2041,7 +2086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2050422623
 RectTransform:
   m_ObjectHideFlags: 0

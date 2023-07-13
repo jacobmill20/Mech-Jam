@@ -41,6 +41,7 @@ public class PlayerMovementScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Recycled code, may or may not use
         /*if(canTakeDamage && collision.gameObject.tag == "Enemy")
         {
             health -= 1;

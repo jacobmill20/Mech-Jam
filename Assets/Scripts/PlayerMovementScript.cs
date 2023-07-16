@@ -128,6 +128,12 @@ public class PlayerMovementScript : MonoBehaviour
         {
             if (isGround)
             {
+                /*
+                 * 
+                 * Why are we changing velocity of player? This makes it feel less lifelike and isn't affected by gravity as well
+                 * Consider changing to addForce for smoothness of play. This will also remove the moon gravity that we have for some reason
+                 * 
+                */
                 mybody.velocity = new Vector3(mybody.velocity.x, jumpHeight, 0f);
             }
         }

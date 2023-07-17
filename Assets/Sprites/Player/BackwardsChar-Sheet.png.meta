@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 626cbf3eb3209364ab966cbf41b0c2e1
+guid: 229d0f1eaf98e8345976817f25a7806c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,43 +105,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Press E_0
+      name: BackwardsChar-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6875, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01266d6a8f7cc16448cf6ce017887050
-      internalID: -1659717523
+      spriteID: 8823eb833fcfd324c8a0b0fa3d93455c
+      internalID: 897736292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Press E_1
+      name: BackwardsChar-Sheet_1
       rect:
         serializedVersion: 2
         x: 16
         y: 0
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6875, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e335974683c996246b32a44feacf911e
-      internalID: -1747145506
+      spriteID: 0fb575b48af36c246b14bd986d9cf14a
+      internalID: -1667626400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackwardsChar-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.6875, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9693bb8c8244740a0110edcb344e86
+      internalID: -1875395814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackwardsChar-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0.6875, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723ff35b3fa633b47b85fdbf38679c1e
+      internalID: -791674672
       vertices: []
       indices: 
       edges: []
@@ -157,8 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Press E_1: -1747145506
-      Press E_0: -1659717523
+      BackwardsChar-Sheet_1: -1667626400
+      BackwardsChar-Sheet_2: -1875395814
+      BackwardsChar-Sheet_3: -791674672
+      BackwardsChar-Sheet_0: 897736292
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

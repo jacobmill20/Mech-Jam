@@ -8,7 +8,7 @@ public class TurretButtonScript : MonoBehaviour
     public static TurretButtonScript instance;
     
     public Button[] turretButtons;
-    public int[] unlocks;
+    public bool[] unlocks;
 
     private Animator anim;
     private GameObject ActiveSpot;
@@ -24,7 +24,7 @@ public class TurretButtonScript : MonoBehaviour
     private void Update()
     {
         //move the buttons with the active spot on screen
-        if (ActiveSpot is not null)
+        if (ActiveSpot)
         {
             transform.position = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().WorldToScreenPoint(ActiveSpot.transform.position);
         }
@@ -55,10 +55,14 @@ public class TurretButtonScript : MonoBehaviour
     private void HideButtons()
     {
         //Hide Buttons
-        for (int i = 0; i < turretButtons.Length; i++)
+        if (!anim.GetBool("Active"))
         {
-            turretButtons[i].gameObject.SetActive(false);
+            for (int i = 0; i < turretButtons.Length; i++)
+            {
+                turretButtons[i].gameObject.SetActive(false);
+            }
         }
+        
     }
 
     private void ShowButtons()
@@ -84,7 +88,7 @@ public class TurretButtonScript : MonoBehaviour
         //Make buttons interactable if unlocked
         for (int i = 0; i < turretButtons.Length; i++)
         {
-            if(unlocks[i] == 1)
+            if(unlocks[i] == true)
                 turretButtons[i].interactable = true;
         }
     }

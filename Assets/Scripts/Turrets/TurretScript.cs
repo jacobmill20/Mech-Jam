@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class TurretScript : MonoBehaviour
 {
-    public float rotationSpeed;
+    public float rotationSpeed, shootInterval;
     
     [SerializeField] private GameObject turretHead;
     [SerializeField] private RangeBoxScript rangeBox;
 
     private GameObject target;
-    
+    private bool lockedOn;
+    private float shootTimer;
 
     // Update is called once per frame
     void Update()
     {
         FindClosestTarget();
         RotateHead();
+        Shoot();
     }
 
     private void FindClosestTarget()
@@ -62,10 +64,28 @@ public class TurretScript : MonoBehaviour
             if(rot > rotationZ + 2f)
             {
                 turretHead.transform.Rotate(new Vector3(0f, 0f, -rotationSpeed * Time.deltaTime));
+                lockedOn = false;
             } else if (rot < rotationZ - 2f)
             {
                 turretHead.transform.Rotate(new Vector3(0f, 0f, rotationSpeed * Time.deltaTime));
+                lockedOn = false;
+            } else
+            {
+                lockedOn = true;
             }
         }
+    }
+
+    private void Shoot()
+    {
+        //If locked on and fire interval waited, shoot
+        if(lockedOn && shootTimer >= shootInterval)
+        {
+            turretHead.GetComponent<IShootable>().Shoot();
+            shootTimer = 0f;
+        }
+
+        //Add to timer
+        shootTimer += Time.deltaTime;
     }
 }

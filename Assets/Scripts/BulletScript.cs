@@ -20,7 +20,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
 
         if(collision.gameObject.tag == "StartGame")
         {

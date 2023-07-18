@@ -154,7 +154,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button
+    path: Flame Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -182,7 +182,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button
+    path: Flame Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -210,7 +210,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (1)
+    path: Rail Gun Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -238,7 +238,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (1)
+    path: Rail Gun Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -266,7 +266,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (2)
+    path: Shotgun Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -294,7 +294,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (2)
+    path: Shotgun Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -322,7 +322,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (3)
+    path: Tesla Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -350,7 +350,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (3)
+    path: Tesla Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -378,7 +378,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (4)
+    path: Missile Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -406,7 +406,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (4)
+    path: Missile Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -434,7 +434,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (5)
+    path: Mine Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -462,7 +462,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (5)
+    path: Mine Button
     classID: 224
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -495,63 +495,63 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 247326761
+      path: 3063039702
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 247326761
+      path: 3063039702
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 4292830458
+      path: 2186960653
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3572643641
+      path: 3316078228
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3454600824
+      path: 2643869788
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3454600824
+      path: 2643869788
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2192085183
+      path: 3606154188
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2612240894
+      path: 349572963
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2612240894
+      path: 349572963
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
@@ -565,21 +565,21 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 4292830458
+      path: 2186960653
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 3572643641
+      path: 3316078228
       attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2192085183
+      path: 3606154188
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
@@ -744,7 +744,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button
+    path: Flame Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -772,7 +772,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button
+    path: Flame Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -800,7 +800,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (1)
+    path: Rail Gun Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -828,7 +828,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (1)
+    path: Rail Gun Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -856,7 +856,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (2)
+    path: Shotgun Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -884,7 +884,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (2)
+    path: Shotgun Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -912,7 +912,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (3)
+    path: Tesla Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -940,7 +940,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (3)
+    path: Tesla Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -968,7 +968,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (4)
+    path: Missile Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -996,7 +996,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (4)
+    path: Missile Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -1024,7 +1024,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Other Button (5)
+    path: Mine Button
     classID: 224
     script: {fileID: 0}
   - curve:
@@ -1052,7 +1052,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.y
-    path: Other Button (5)
+    path: Mine Button
     classID: 224
     script: {fileID: 0}
   m_EulerEditorCurves: []

@@ -262,13 +262,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Terrain-Sheet_5: 1237902225
+      Terrain-Sheet_3: -1119444528
       Terrain-Sheet_1: 2008984676
       Terrain-Sheet_0: -6421037
       Terrain-Sheet_2: -509509321
       Terrain-Sheet_4: 200266537
       Terrain-Sheet_6: 686855798
-      Terrain-Sheet_3: -1119444528
+      Terrain-Sheet_5: 1237902225
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

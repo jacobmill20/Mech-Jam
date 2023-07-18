@@ -73,7 +73,7 @@ public class PlayerMovementScript : MonoBehaviour
         if (!isGround)
         {
             speed = force * airPenalty;
-            if ((dirX > 0 && mybody.velocity.x < speed) || (dirX < 0 && mybody.velocity.x > -speed)) //Only add force if velocity is less than speed
+            if ((dirX > 0 && mybody.velocity.x < force) || (dirX < 0 && mybody.velocity.x > -force)) //Only add force if velocity is less than ground speed
                 mybody.AddForce(new Vector2(dirX * speed, 0f));
         }
         else

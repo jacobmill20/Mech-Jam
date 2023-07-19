@@ -339,7 +339,7 @@ MonoBehaviour:
   attackPoint: {fileID: 773558878}
   projectile: {fileID: 2616741753514149396, guid: 5553b06a72f24af4f9848cc045e95f97, type: 3}
   shootInterval: 0.8
-  damage: 0
+  damage: 1
 --- !u!1 &211255242 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 211255242, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
@@ -428,6 +428,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bb2a738d8332ef4d8b3324d441d57cd, type: 3}
+--- !u!1 &299954932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299954933}
+  m_Layer: 6
+  m_Name: Attack Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &299954933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299954932}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3354, y: 0.0342, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 315518908}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &315518907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -459,7 +490,19 @@ PrefabInstance:
       propertyPath: bulletContainer
       value: 
       objectReference: {fileID: 1939032786}
+    - target: {fileID: 957863078, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102499744, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2082353920, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2084358125, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -513,6 +556,87 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+--- !u!4 &315518908 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 957863079, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+  m_PrefabInstance: {fileID: 315518907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &315518909 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2084358126, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+  m_PrefabInstance: {fileID: 315518907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &315518910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2084358125, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+  m_PrefabInstance: {fileID: 315518907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &315518911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315518910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24015b91be527c44c9c28855ba2f3d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletContainer: {fileID: 1939032786}
+  attackPoint: {fileID: 825909556}
+  projectile: {fileID: 565865564753609554, guid: e29ce735e56cd8647a7cb3ee1b23ba47, type: 3}
+  shootInterval: 4
+  damage: 50
+--- !u!4 &315518912 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1102499745, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+  m_PrefabInstance: {fileID: 315518907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &315518913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1102499744, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+  m_PrefabInstance: {fileID: 315518907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &315518914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 957863078, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
+  m_PrefabInstance: {fileID: 315518907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &315518915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315518913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24015b91be527c44c9c28855ba2f3d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletContainer: {fileID: 0}
+  attackPoint: {fileID: 0}
+  projectile: {fileID: 2616741753514149396, guid: 94d6ce0b50ac54546b5457af5fe2f255, type: 3}
+  shootInterval: 0.15
+  damage: 0
+--- !u!114 &315518916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315518914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24015b91be527c44c9c28855ba2f3d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletContainer: {fileID: 1939032786}
+  attackPoint: {fileID: 299954932}
+  projectile: {fileID: 2616741753514149396, guid: e6d3233579f9f7f47bbf56ac7e2015ef, type: 3}
+  shootInterval: 2
+  damage: 0
 --- !u!1001 &360209654
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -812,6 +936,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &542336660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542336661}
+  m_Layer: 6
+  m_Name: Attack Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &542336661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542336660}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.3235, y: 0.0342, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 315518912}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &546853754
 GameObject:
@@ -1599,6 +1754,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &825909556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 825909557}
+  m_Layer: 6
+  m_Name: Attack Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &825909557
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825909556}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.414, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 315518909}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &873129473
 GameObject:
   m_ObjectHideFlags: 0

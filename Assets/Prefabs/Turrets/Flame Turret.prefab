@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 7968950348179214603}
   m_Layer: 6
   m_Name: Range Box
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -522,10 +522,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7968950348817266706}
   - component: {fileID: 7968950348817266705}
+  - component: {fileID: 1890942452352175291}
   - component: {fileID: 7968950348817266704}
   m_Layer: 6
   m_Name: Flame Turret
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -577,6 +578,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.37673166, y: 0.2871571}
   m_EdgeRadius: 0
+--- !u!50 &1890942452352175291
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7968950348817266711}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &7968950348817266704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,6 +615,7 @@ MonoBehaviour:
   shootInterval: 0.1
   maxHealth: 100
   health: 0
+  isFacingLeft: 0
   turretHead: {fileID: 7968950348008672105}
   battery: {fileID: 7968950348368573110}
   rangeBox: {fileID: 7968950348179214603}

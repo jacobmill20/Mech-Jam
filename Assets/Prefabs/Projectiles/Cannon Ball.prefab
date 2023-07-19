@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1759105428064033511}
   - component: {fileID: 1437743738924137519}
   m_Layer: 8
-  m_Name: Flame
+  m_Name: Cannon Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.062580526
+  m_Radius: 0.04
 --- !u!114 &1437743738924137519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +161,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -344314517, guid: a5ef2f70e362d9b44a0ae8b99d1df0f7, type: 3}
+  m_Sprite: {fileID: 1022437441, guid: a5ef2f70e362d9b44a0ae8b99d1df0f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

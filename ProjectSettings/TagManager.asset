@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Turret Spot
   - Enemy
+  - Turret
   layers:
   - Default
   - TransparentFX

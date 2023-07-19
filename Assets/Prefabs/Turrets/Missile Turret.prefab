@@ -125,10 +125,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1235758546564315245}
   - component: {fileID: 1235758546564315246}
+  - component: {fileID: 2942245234919820210}
   - component: {fileID: 1235758546564315247}
   m_Layer: 6
   m_Name: Missile Turret
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,6 +181,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.37673166, y: 0.2871571}
   m_EdgeRadius: 0
+--- !u!50 &2942245234919820210
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235758546564315240}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &1235758546564315247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +218,7 @@ MonoBehaviour:
   shootInterval: 3
   maxHealth: 100
   health: 0
+  isFacingLeft: 0
   turretHead: {fileID: 1235758547370527510}
   battery: {fileID: 1235758546946093769}
   rangeBox: {fileID: 1235758547268440436}
@@ -437,7 +460,7 @@ GameObject:
   - component: {fileID: 1235758547268440436}
   m_Layer: 6
   m_Name: Range Box
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

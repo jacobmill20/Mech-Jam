@@ -89,6 +89,9 @@ public class TurretScript : MonoBehaviour
             {
                 lockedOn = true;
             }
+        } else
+        {
+            lockedOn = false;
         }
     }
 
@@ -107,6 +110,7 @@ public class TurretScript : MonoBehaviour
 
     private void DestroyTurret()
     {
+        //Create new dead turret then disable turret
         GameObject deadGuy = Instantiate(destroyedTurret, transform.position, transform.rotation);
         deadGuy.GetComponent<DestroyedTurretScript>().turret = gameObject;
         gameObject.SetActive(false);

@@ -77,11 +77,11 @@ public class TurretScript : MonoBehaviour
             }
 
             //Gradual targetting
-            if(convertedRot > rotationZ + 2f)
+            if(convertedRot > rotationZ + 1.5f)
             {
                 turretHead.transform.Rotate(new Vector3(0f, 0f, -rotationSpeed * Time.deltaTime));
                 lockedOn = false;
-            } else if (convertedRot < rotationZ - 2f)
+            } else if (convertedRot < rotationZ - 1.5f)
             {
                 turretHead.transform.Rotate(new Vector3(0f, 0f, rotationSpeed * Time.deltaTime));
                 lockedOn = false;

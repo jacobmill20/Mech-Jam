@@ -9,13 +9,13 @@ public class BulletScript : MonoBehaviour
     public int damage;
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Move();
     }
 
     private void Move()
     {
-        transform.position += transform.right * speed;
+        transform.position += transform.right * speed * Time.deltaTime;
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RangeBoxScript : MonoBehaviour
 {
-    public List<GameObject> targets;
+    public List<GameObject> targets { get; private set; }
 
     private void Awake()
     {

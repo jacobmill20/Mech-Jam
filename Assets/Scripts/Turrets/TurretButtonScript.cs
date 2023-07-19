@@ -50,7 +50,12 @@ public class TurretButtonScript : MonoBehaviour
         //Deactivate the spot, hide it, then place a turret
         DeactivateSpot();
         ActiveSpot.SetActive(false);
-        Instantiate(turret, ActiveSpot.transform.position, Quaternion.identity);
+        GameObject newTurret = Instantiate(turret, ActiveSpot.transform.position, Quaternion.identity);
+        if (ActiveSpot.GetComponent<TurretSpotScript>().isFacingLeft && !newTurret.name.Contains("Mine"))
+        {
+            newTurret.transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            newTurret.GetComponent<TurretScript>().isFacingLeft = true;
+        }
     }
     
     private void HideButtons()

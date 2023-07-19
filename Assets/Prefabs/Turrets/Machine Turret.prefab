@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2279308089271579469}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Attack Point 1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2279308089318186805}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProjectileContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 2279308089321288071}
   - component: {fileID: 2279308089321288068}
   - component: {fileID: 2279308089321288069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Machine Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 2279308089954597666}
   - component: {fileID: 2279308089954597669}
   - component: {fileID: 7696567282332690006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 2279308090125402878}
   - component: {fileID: 2279308090125402879}
   - component: {fileID: 2279308090125402865}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretHeadMachine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2279308090166808064}
   - component: {fileID: 2279308090166808067}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 2279308090293852304}
   - component: {fileID: 2279308090293852305}
   - component: {fileID: 2279308090293852318}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Range Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -513,7 +513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6eac1386c887d43a57011afbc0d925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets: []
 --- !u!1 &2279308090386698965
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,7 +523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2279308090386698964}
   - component: {fileID: 2279308090386698967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

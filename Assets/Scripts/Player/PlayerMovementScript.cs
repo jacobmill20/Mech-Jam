@@ -13,8 +13,8 @@ public class PlayerMovementScript : MonoBehaviour
     public GameObject healthBar;
 
     private float speed;
-    private bool isGround, isDead;
-    private Vector3 mousePostition, prevPosition;
+    private bool isGround;
+    private Vector3 mousePostition;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D mybody;
     private Animator anim;
@@ -27,7 +27,6 @@ public class PlayerMovementScript : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         mybody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        prevPosition = transform.position;
 
         if (instance == null)
             instance = this;
@@ -146,10 +145,4 @@ public class PlayerMovementScript : MonoBehaviour
     {
         isGround = Physics2D.Raycast(groundCheckPosition.transform.position, Vector2.down, 0.01f, groundLayer);
     }
-
-    public bool GetIsDead()
-    {
-        return isDead;
-    }
-
 }

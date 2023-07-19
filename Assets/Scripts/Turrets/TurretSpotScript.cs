@@ -5,6 +5,7 @@ using UnityEngine;
 public class TurretSpotScript : MonoBehaviour
 {
     public GameObject E;
+    public bool isFacingLeft;
 
     private bool playerPresent, active;
 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a5ef2f70e362d9b44a0ae8b99d1df0f7
+guid: b15a3f8beb8f45349b197655fae54f81
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,160 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bullets-Sheet_0
+      name: Missile (1)_0
       rect:
         serializedVersion: 2
-        x: 81
-        y: 1
-        width: 14
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2c2e399da86b4347948070f9a38f16a
-      internalID: -344314517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullets-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 4
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 295f8f743e7c34d46920767464a5da68
-      internalID: 1022437441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullets-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 7
-        width: 5
-        height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 358ad6bd2177ced40844e380723b6d20
-      internalID: 1668376394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullets-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 7
-        width: 3
-        height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6eb09e3647854d4bb7551f5a1f8cee7
-      internalID: 1509311023
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullets-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 7
-        width: 16
-        height: 3
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b8d80f99010a1c4eb02ab03f21487c8
-      internalID: -1807935836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullets-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 8
-        width: 1
-        height: 1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e12c6db20a57674fb54e4d30fd3e8f8
-      internalID: -2131254543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullets-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 8
-        width: 2
-        height: 1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0aef2b783fcd5f443b262095eb1fb2c9
-      internalID: -1518894582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullets-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 7
-        width: 5
-        height: 2
+        x: 0
+        y: 33
+        width: 64
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,8 +119,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfb7f9f79408d4b4b979eed5c7ac7285
-      internalID: -880181138
+      spriteID: 7446431c5c9f50c4488f6380f5627355
+      internalID: 1058072965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Missile (1)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 64
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aff00bfcc38ef84eb22a2aed1863b4b
+      internalID: 1848856812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Missile (1)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 64
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b36401e3a042fd46b70a0426bba888c
+      internalID: -357804485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Missile (1)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c832b812dd17df478e35d86e1493cc4
+      internalID: -246092518
       vertices: []
       indices: 
       edges: []
@@ -283,14 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bullets-Sheet_6: -1518894582
-      Bullets-Sheet_7: -880181138
-      Bullets-Sheet_1: 1022437441
-      Bullets-Sheet_0: -344314517
-      Bullets-Sheet_4: -1807935836
-      Bullets-Sheet_5: -2131254543
-      Bullets-Sheet_3: 1509311023
-      Bullets-Sheet_2: 1668376394
+      Missile (1)_0: 1058072965
+      Missile (1)_3: -246092518
+      Missile (1)_2: -357804485
+      Missile (1)_1: 1848856812
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

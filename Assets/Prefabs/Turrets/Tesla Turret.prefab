@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6795548559269518944}
   - component: {fileID: 6795548559269518947}
   - component: {fileID: 6795548559269518946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tesla Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6795548559282942162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProjectileContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6795548559353765034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Attack Point 1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 6795548559785383109}
   - component: {fileID: 6795548559785383106}
   - component: {fileID: 3107671633911040433}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 6795548559973660535}
   - component: {fileID: 6795548559973660534}
   - component: {fileID: 6795548559973660537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Range Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6795548559997870567}
   - component: {fileID: 6795548559997870564}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 6795548560073911577}
   - component: {fileID: 6795548560073911576}
   - component: {fileID: 6795548560073911578}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretHeadTesla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6795548560351460659}
   - component: {fileID: 6795548560351460656}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1515541805617594659}
   - component: {fileID: 1515541805617594656}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1515541806615355578}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Attack Point 1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1515541806694468802}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProjectileContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 1515541806699274864}
   - component: {fileID: 1515541806699274867}
   - component: {fileID: 1515541806699274866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rail Gun Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 1515541806968885513}
   - component: {fileID: 1515541806968885512}
   - component: {fileID: 1515541806968885510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretHeadRail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1515541807044894199}
   - component: {fileID: 1515541807044894196}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 1515541807068908391}
   - component: {fileID: 1515541807068908390}
   - component: {fileID: 1515541807068908393}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Range Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6eac1386c887d43a57011afbc0d925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets: []
 --- !u!1 &1515541807265605844
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +499,7 @@ GameObject:
   - component: {fileID: 1515541807265605845}
   - component: {fileID: 1515541807265605842}
   - component: {fileID: 6946310623922648481}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -6,13 +6,14 @@ public class TurretScript : MonoBehaviour
 {
     public float rotationSpeed, shootInterval;
     public int maxHealth, health;
+    public bool isFacingLeft;
     
     [SerializeField] private GameObject turretHead;
     [SerializeField] private GameObject battery;
     [SerializeField] private RangeBoxScript rangeBox;
     [SerializeField] private GameObject destroyedTurret;
 
-    private GameObject target;
+    public GameObject target { get; private set; }
     private bool lockedOn;
     private float shootTimer;
 
@@ -61,7 +62,16 @@ public class TurretScript : MonoBehaviour
         if(target is not null)
         {
             //Calculate target angle
-            Vector3 diffference = target.transform.position - turretHead.transform.position;
+            Vector3 targetPos;
+            if (isFacingLeft)
+            {
+                targetPos = target.transform.position - new Vector3(2f * (target.transform.position.x - turretHead.transform.position.x), 0f, 0f);
+            } else
+            {
+                targetPos = target.transform.position;
+            }
+
+            Vector3 diffference = targetPos - turretHead.transform.position;
             diffference.Normalize();
             float rotationZ = Mathf.Atan2(diffference.y, diffference.x) * Mathf.Rad2Deg;
             //turretHead.transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);  //Instant targetting
@@ -105,7 +115,8 @@ public class TurretScript : MonoBehaviour
         }
 
         //Add to timer
-        shootTimer += Time.deltaTime;
+        if (shootTimer < shootInterval)
+            shootTimer += Time.deltaTime;
     }
 
     private void DestroyTurret()
@@ -114,5 +125,20 @@ public class TurretScript : MonoBehaviour
         GameObject deadGuy = Instantiate(destroyedTurret, transform.position, transform.rotation);
         deadGuy.GetComponent<DestroyedTurretScript>().turret = gameObject;
         gameObject.SetActive(false);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //Enemy projectile
+        if(collision.gameObject.layer == 9)
+        {
+            //Store Bullet Script
+            BulletScript bulletScript = collision.gameObject.GetComponent<BulletScript>();
+            //Subtract health
+            health -= bulletScript.damage;
+            //Destroy projectile
+            if (!bulletScript.undestroyable)
+                Destroy(collision.gameObject);
+        }
     }
 }

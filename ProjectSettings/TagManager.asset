@@ -13,10 +13,10 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - Friendly
+  - Enemy
+  - Friendly Projectile
+  - Enemy Projectile
   - 
   - 
   - 

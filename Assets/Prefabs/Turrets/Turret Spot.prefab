@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 263791489488562369}
   - component: {fileID: 263791489488562368}
   - component: {fileID: 263791489488562371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Press E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 263791490363292687}
   - component: {fileID: 263791490363292682}
   - component: {fileID: 263791490363292685}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turret Spot
   m_TagString: Turret Spot
   m_Icon: {fileID: 0}

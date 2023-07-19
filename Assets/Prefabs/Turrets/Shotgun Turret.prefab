@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6624004883682151125}
   - component: {fileID: 6624004883682151126}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretNeck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6624004884382704419}
   - component: {fileID: 6624004884382704420}
   - component: {fileID: 3351585027156278871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 6624004884497095423}
   - component: {fileID: 6624004884497095422}
   - component: {fileID: 6624004884497095420}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretHeadShotty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 6624004884597047441}
   - component: {fileID: 6624004884597047440}
   - component: {fileID: 6624004884597047455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Range Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -365,7 +365,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6eac1386c887d43a57011afbc0d925, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targets: []
 --- !u!1 &6624004884707317248
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6624004884707317249}
   - component: {fileID: 6624004884707317250}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6624004884750632756}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ProjectileContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -492,7 +491,7 @@ GameObject:
   - component: {fileID: 6624004884764354950}
   - component: {fileID: 6624004884764354949}
   - component: {fileID: 6624004884764354948}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shotgun Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -575,7 +574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6624004884814064460}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Attack Point 1
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}

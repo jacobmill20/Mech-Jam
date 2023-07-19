@@ -148,4 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   damage: 0
-  undestroyable: 1
+  undestroyable: 0

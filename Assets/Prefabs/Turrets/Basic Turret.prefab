@@ -270,6 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8461711245038883195}
   - component: {fileID: 8461711245038883196}
+  - component: {fileID: 1984367631}
   m_Layer: 0
   m_Name: Battery
   m_TagString: Untagged
@@ -344,6 +345,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1984367631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8461711245038883194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3913d99872d9c2447a2f42f47d685c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerLevels:
+  - {fileID: 567679168, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: 1167489930, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: -1391014603, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: -2064827385, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: -1701036541, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: -1568387638, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: 1742896521, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: 1977304363, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: 1171048629, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: -1634487319, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
+  - {fileID: 14937787, guid: 29f6af9b8c425d1489306181cc4b630e, type: 3}
 --- !u!1 &8461711245362336382
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,8 +541,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 40
   shootInterval: 0.5
+  maxHealth: 100
+  health: 0
   turretHead: {fileID: 8461711244738111653}
+  battery: {fileID: 8461711245038883194}
   rangeBox: {fileID: 8461711244841317063}
+  destroyedTurret: {fileID: 1988235157343491871, guid: 3ee169a3e35492f4181360e36022312b, type: 3}
 --- !u!1 &8461711246612117644
 GameObject:
   m_ObjectHideFlags: 0

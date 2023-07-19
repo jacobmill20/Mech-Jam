@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 169e1e4d2ccd2aa40989c26e195da2a2
+guid: 42d462a75ef1d094aa83fc4c0cb70e31
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Terrain-Sheet_0
+      name: Press E X_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9dc4338ab6c758409ee270a8d01aa2f
-      internalID: -6421037
+      spriteID: 03e34254564a1854b900d46fac2beb09
+      internalID: -1623518904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Terrain-Sheet_1
+      name: Press E X_1
       rect:
         serializedVersion: 2
-        x: 512
+        x: 16
         y: 0
-        width: 512
-        height: 240
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,113 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2734d040bcb63c4e8424383bc5d00f1
-      internalID: 2008984676
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 512
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f157d735a165014bbe2a182a00ab29e
-      internalID: -509509321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 512
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 346473bfa90fa67409f4833e5ebf524a
-      internalID: -1119444528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 512
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74eae510f29f4884c96cbcfa1fa6a1e2
-      internalID: 200266537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 2752
-        y: 0
-        width: 96
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4eb17ae5c5a9d4b4c887c0a55cd89811
-      internalID: 1237902225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrain-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 3263
-        y: 0
-        width: 96
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c6cd3dca3960754998014a83524bce6
-      internalID: 686855798
+      spriteID: cf435c94432789146964526dde9556ca
+      internalID: 1109058139
       vertices: []
       indices: 
       edges: []
@@ -262,13 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Terrain-Sheet_5: 1237902225
-      Terrain-Sheet_1: 2008984676
-      Terrain-Sheet_0: -6421037
-      Terrain-Sheet_2: -509509321
-      Terrain-Sheet_4: 200266537
-      Terrain-Sheet_6: 686855798
-      Terrain-Sheet_3: -1119444528
+      Press E X_1: 1109058139
+      Press E X_0: -1623518904
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

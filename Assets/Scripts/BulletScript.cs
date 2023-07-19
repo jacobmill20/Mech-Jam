@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class BulletScript : MonoBehaviour
 {
-    public float speed = 0.1f;
+    public float speed;
+    public int damage;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -16,19 +17,5 @@ public class BulletScript : MonoBehaviour
     private void Move()
     {
         transform.position += transform.right * speed;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        //gameObject.SetActive(false);
-
-        if(collision.gameObject.tag == "StartGame")
-        {
-            SceneManager.LoadScene("SampleScene");
-        }
-        if(collision.gameObject.tag == "Quit")
-        {
-            Application.Quit();
-        }
     }
 }

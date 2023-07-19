@@ -314,11 +314,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5692892296943025814, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.789
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5692892296943025814, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.031
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5692892296943025814, guid: bbb3db722c14a1348a6c9faeefb91379, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1111,7 +1111,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767325822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.68, y: 0.77, z: 0}
+  m_LocalPosition: {x: 19.45, y: 0.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1202,6 +1202,82 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &873129473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 873129474}
+  - component: {fileID: 873129476}
+  - component: {fileID: 873129475}
+  m_Layer: 5
+  m_Name: Press E to X
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &873129474
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873129473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1431115539}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 108, y: 108}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &873129475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873129473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1623518904, guid: 42d462a75ef1d094aa83fc4c0cb70e31, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &873129476
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873129473}
+  m_CullTransparentMesh: 1
 --- !u!1 &888179417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,6 +2095,7 @@ RectTransform:
   - {fileID: 663323709}
   - {fileID: 1207968534}
   - {fileID: 1016653578}
+  - {fileID: 873129474}
   m_Father: {fileID: 415979979}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2039,6 +2116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0427d0a4a9a383f42bccb0787c913830, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  E: {fileID: 873129473}
   turretButtons:
   - {fileID: 1849572982}
   - {fileID: 595571012}
@@ -2363,7 +2441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734135004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.59, y: 2.37, z: 0}
+  m_LocalPosition: {x: 19.13, y: 2.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2542,7 +2620,7 @@ MonoBehaviour:
         m_MethodName: ConstructTurret
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 5877353941181161787, guid: 7c541293abea62a43abe9fbb6e321033, type: 3}
+          m_ObjectArgument: {fileID: 8461711245546429403, guid: f466acf7b914f504b97b550f5a28fa5f, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0

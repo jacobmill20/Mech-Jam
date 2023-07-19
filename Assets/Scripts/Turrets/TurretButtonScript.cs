@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class TurretButtonScript : MonoBehaviour
 {
     public static TurretButtonScript instance;
-    
+
+    public GameObject E;
     public Button[] turretButtons;
     public bool[] unlocks;
 
@@ -26,7 +27,7 @@ public class TurretButtonScript : MonoBehaviour
         //move the buttons with the active spot on screen
         if (ActiveSpot)
         {
-            transform.position = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>().WorldToScreenPoint(ActiveSpot.transform.position);
+            transform.position = Camera.main.GetComponent<Camera>().WorldToScreenPoint(ActiveSpot.transform.position) + new Vector3(0f, 200f, 0f);
         }
     }
 
@@ -61,6 +62,8 @@ public class TurretButtonScript : MonoBehaviour
             {
                 turretButtons[i].gameObject.SetActive(false);
             }
+
+            E.SetActive(false);
         }
         
     }
@@ -72,6 +75,8 @@ public class TurretButtonScript : MonoBehaviour
         {
             turretButtons[i].gameObject.SetActive(true);
         }
+
+        E.SetActive(true);
     }
 
     private void DisableButtonsInteract()

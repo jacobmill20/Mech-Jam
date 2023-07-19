@@ -5,20 +5,36 @@ using UnityEngine;
 public class TurretScript : MonoBehaviour
 {
     public float rotationSpeed, shootInterval;
+    public int maxHealth, health;
     
     [SerializeField] private GameObject turretHead;
+    [SerializeField] private GameObject battery;
     [SerializeField] private RangeBoxScript rangeBox;
+    [SerializeField] private GameObject destroyedTurret;
 
     private GameObject target;
     private bool lockedOn;
     private float shootTimer;
 
+    private void Start()
+    {
+        health = maxHealth;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        UpdateHealth();
         FindClosestTarget();
         RotateHead();
         Shoot();
+    }
+
+    private void UpdateHealth()
+    {
+        if (health <= 0)
+            DestroyTurret();
+        battery.GetComponent<BatteryScript>().UpdateHealth((health * 10) / maxHealth);
     }
 
     private void FindClosestTarget()
@@ -51,21 +67,21 @@ public class TurretScript : MonoBehaviour
             //turretHead.transform.rotation = Quaternion.Euler(0f, 0f, rotationZ);  //Instant targetting
 
             //A bit of conversion because rotation is wierd
-            float rot;
+            float convertedRot;
             if(turretHead.transform.eulerAngles.z > 180f)
             {
-                rot = turretHead.transform.eulerAngles.z - 360;
+                convertedRot = turretHead.transform.eulerAngles.z - 360;
             } else
             {
-                rot = turretHead.transform.eulerAngles.z;
+                convertedRot = turretHead.transform.eulerAngles.z;
             }
 
             //Gradual targetting
-            if(rot > rotationZ + 2f)
+            if(convertedRot > rotationZ + 2f)
             {
                 turretHead.transform.Rotate(new Vector3(0f, 0f, -rotationSpeed * Time.deltaTime));
                 lockedOn = false;
-            } else if (rot < rotationZ - 2f)
+            } else if (convertedRot < rotationZ - 2f)
             {
                 turretHead.transform.Rotate(new Vector3(0f, 0f, rotationSpeed * Time.deltaTime));
                 lockedOn = false;
@@ -87,5 +103,12 @@ public class TurretScript : MonoBehaviour
 
         //Add to timer
         shootTimer += Time.deltaTime;
+    }
+
+    private void DestroyTurret()
+    {
+        GameObject deadGuy = Instantiate(destroyedTurret, transform.position, transform.rotation);
+        deadGuy.GetComponent<DestroyedTurretScript>().turret = gameObject;
+        gameObject.SetActive(false);
     }
 }

@@ -1,63 +1,112 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class WaveSpawner : MonoBehaviour
 {
-    public Transform[] enemyPrefabs;
-    public GameObject leftSpawner, rightSpawner;
+    public static int EnemiesLeft = 0;
 
+    public Wave[] waves;
+    public List<Transform> spawners;
     public float timeBetweenWaves = 5f;
-    private float countdown = 2f;
-    private bool roundSending = false;
+    [SerializeField] private TMP_Text roundText;
 
-    private int waves = 0;
-    public int currentRound = 0;
-    private int difficulty = 0;
-    public int enemies = 0;
+    [Header("Enemy Prefabs")]
+    public GameObject enemy1_black;
+    public GameObject enemy2_red, enemy3_bigBlack, enemy4_bigRed, enemy5_fire, enemy6_Tank;
+
+    
+    private float countdown = 2f;
+
+    private int waveIdx = 0;
+    private int spawnIdx = 0;
     
 
     // Update is called once per frame
     void Update()
     {
-        while (roundSending)
+        if(EnemiesLeft > 0)
         {
-            if (countdown > 0)
-            {
-                SpawnWave();
-                countdown = timeBetweenWaves;
-            }
-
-            countdown -= Time.deltaTime;
+            return;
         }
-    }
 
-    void SpawnWave()
-    {
-        Debug.Log("Spawn a wave");
-
-        switch (difficulty)
+        if (countdown <= 0f)
         {
-            case 0:
-                Debug.Log("Easy number of enemies (1-3)");
-                break;
-            case 1:
-                Debug.Log("Medium number of enemies (3-5)");
-                break;
-            case 2:
-                Debug.Log("Hard number of enemies (6-10)");
-                break;
-
+            StartCoroutine(SpawnWave());
+            countdown = timeBetweenWaves;
+            return;
         }
-        waves++;
-
-        if (waves == 5)
-            difficulty++;
         
+        countdown -= Time.deltaTime;
+
+        countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
     }
 
-    void SpawnRound()
+    IEnumerator SpawnWave()
     {
-        roundSending = true;
+        Debug.Log("Spawn a Round");
+        roundText.text = ("ROUND " + (waveIdx+1)).ToString();
+        Wave wave = waves[waveIdx];
+
+        //Spawn Black Tanks
+        for (int i = 0; i < wave.count1; i++)
+        {
+            SpawnEnemy(enemy1_black);
+            yield return new WaitForSeconds(1f / wave.rate1);
+        }
+
+        //Spawn Red Tanks
+        for (int i = 0; i < wave.count2; i++)
+        {
+            SpawnEnemy(enemy2_red);
+            yield return new WaitForSeconds(1f / wave.rate2);
+        }
+
+        //Spawn Big Black Tanks
+        for (int i = 0; i < wave.count3; i++)
+        {
+            SpawnEnemy(enemy3_bigBlack);
+            yield return new WaitForSeconds(1f / wave.rate3);
+        }
+
+        //Spawn Big Red Tanks
+        for (int i = 0; i < wave.count4; i++)
+        {
+            SpawnEnemy(enemy4_bigRed);
+            yield return new WaitForSeconds(1f / wave.rate4);
+        }
+
+        //Spawn Fire Tanks
+        for (int i = 0; i < wave.count5; i++)
+        {
+            SpawnEnemy(enemy5_fire);
+            yield return new WaitForSeconds(1f / wave.rate5);
+        }
+
+        //Spawn Boss Tank
+        for (int i = 0; i < wave.count6; i++)
+        {
+            SpawnEnemy(enemy6_Tank);
+            yield return new WaitForSeconds(1f / wave.rate6);
+        }
+
+        waveIdx++;
+    }
+
+    void SpawnEnemy(GameObject enemy)
+    {
+        if(waveIdx < 10)
+        {
+            Instantiate(enemy, spawners[spawnIdx].position, spawners[spawnIdx].rotation);
+        }
+        else
+        {
+            Instantiate(enemy, spawners[spawnIdx].position, spawners[spawnIdx].rotation);
+            spawnIdx++;
+            if (spawnIdx > spawners.Count - 1)
+                spawnIdx = 0;
+        }
+        EnemiesLeft++;
     }
 }

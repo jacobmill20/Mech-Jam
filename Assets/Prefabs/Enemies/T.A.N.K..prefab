@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2862204301446348475}
   - component: {fileID: 2862204301446348474}
   - component: {fileID: 2862204301446348478}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: T.A.N.K.
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -155,7 +155,6 @@ MonoBehaviour:
   range: {fileID: 2862204301464171056}
   attackPoint: {fileID: 2862204301831033565}
   projectile: {fileID: 8320931299119197657, guid: 789a59f70bf88bc419d635f29bb0d88d, type: 3}
-  container: {fileID: 0}
 --- !u!1 &2862204301464171052
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +167,7 @@ GameObject:
   - component: {fileID: 2862204301464171054}
   - component: {fileID: 2862204301464171055}
   - component: {fileID: 2862204301464171056}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2862204301831033565}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1168638023460585709}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168638023460585708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.111, y: -0.06, z: 0}
+  m_LocalPosition: {x: 0.111, y: -0.0543, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 1168638024524854460}
   - component: {fileID: 1168638024524854461}
   - component: {fileID: 1168638024524854458}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SmallBlack
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168638024524854432}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.310001, y: -2.434391, z: 0.07458922}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
@@ -208,7 +208,6 @@ MonoBehaviour:
   range: {fileID: 1168638024558412246}
   attackPoint: {fileID: 1168638023460585709}
   projectile: {fileID: 7219317430973544227, guid: 6fa46bd02e8d98a49bb980d3479bd969, type: 3}
-  container: {fileID: 0}
 --- !u!1 &1168638024558412250
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +220,7 @@ GameObject:
   - component: {fileID: 1168638024558412248}
   - component: {fileID: 1168638024558412249}
   - component: {fileID: 1168638024558412246}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2627472591508265721}
   - component: {fileID: 2627472591508265720}
   - component: {fileID: 2627472591508265724}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fire
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -155,7 +155,6 @@ MonoBehaviour:
   range: {fileID: 2627472592609425125}
   attackPoint: {fileID: 2627472591791238520}
   projectile: {fileID: 565865564753609554, guid: b44dc0d05a82ccf4db047961a373c803, type: 3}
-  container: {fileID: 0}
 --- !u!1 &2627472591791238523
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2627472591791238520}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -199,7 +198,7 @@ GameObject:
   - component: {fileID: 2627472592609425127}
   - component: {fileID: 2627472592609425124}
   - component: {fileID: 2627472592609425125}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}

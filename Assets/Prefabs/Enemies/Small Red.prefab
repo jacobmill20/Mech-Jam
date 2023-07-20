@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5216745738693874902}
   - component: {fileID: 5216745738693874903}
   - component: {fileID: 5216745738693874904}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5216745739484258019}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 5216745739519534561}
   - component: {fileID: 5216745739519534560}
   - component: {fileID: 5216745739519534565}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Small Red
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -322,4 +322,3 @@ MonoBehaviour:
   range: {fileID: 5216745738693874904}
   attackPoint: {fileID: 5216745739484258019}
   projectile: {fileID: 7219317430973544227, guid: 6fa46bd02e8d98a49bb980d3479bd969, type: 3}
-  container: {fileID: 0}

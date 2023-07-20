@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5379819191925105073}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 5379819192575275621}
   - component: {fileID: 5379819192575275642}
   - component: {fileID: 5379819192575275622}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BigBlack
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -186,7 +186,6 @@ MonoBehaviour:
   range: {fileID: 5379819192970540936}
   attackPoint: {fileID: 5379819191925105073}
   projectile: {fileID: 6409689202838310113, guid: 3c2339d7468966c4fa657da3a56e571c, type: 3}
-  container: {fileID: 0}
 --- !u!1 &5379819192970540940
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +198,7 @@ GameObject:
   - component: {fileID: 5379819192970540942}
   - component: {fileID: 5379819192970540937}
   - component: {fileID: 5379819192970540936}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}

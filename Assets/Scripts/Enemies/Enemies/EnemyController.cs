@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private EnemyRange range;
     [SerializeField] private Transform attackPoint;
-    [SerializeField] private GameObject projectile, container;
+    [SerializeField] private GameObject projectile;
 
     public GameObject target { get; private set; }
     private bool lockedOn = false;
@@ -24,6 +24,7 @@ public class EnemyController : MonoBehaviour
     {
         health = maxHealth;
         anim = GetComponent<Animator>();
+        shootTimer = fireRate;
     }
     private void Update()
     {
@@ -48,7 +49,10 @@ public class EnemyController : MonoBehaviour
     private void UpdateHealth()
     {
         if (health <= 0)
+        {
             DestroyTank();
+            WaveSpawner.EnemiesLeft--;
+        }
     }
 
     private void FindClosestTarget()
@@ -82,7 +86,7 @@ public class EnemyController : MonoBehaviour
         if (lockedOn && shootTimer >= fireRate)
         {
             Debug.Log("Spawning Bullet");
-            activeMissile = Instantiate(projectile, attackPoint.position, attackPoint.rotation, container.transform);
+            Instantiate(projectile, attackPoint.position, attackPoint.rotation, attackPoint.transform);
 
             shootTimer = 0f;
         }

@@ -14,10 +14,11 @@ public class BasicTurretHeadScript : MonoBehaviour, IShootable
         attackIdx = 0;
     }
     
-    public void Shoot()
+    public void Shoot(int damage)
     {
         //Spawn projectile
-        Instantiate(projectile, attackPoints[attackIdx].position, attackPoints[attackIdx].rotation, projectileContainer.transform);
+        GameObject newBullet = Instantiate(projectile, attackPoints[attackIdx].position, attackPoints[attackIdx].rotation, projectileContainer.transform);
+        newBullet.GetComponent<BulletScript>().damage = damage;
 
         //Increment attack idx
         attackIdx++;

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5216745738693874902}
   - component: {fileID: 5216745738693874903}
   - component: {fileID: 5216745738693874904}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5216745738693874900}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -138,7 +138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5216745739484258018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.115, y: -0.059999943, z: 0}
+  m_LocalPosition: {x: 0.115, y: 0.0111, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 5216745739519534561}
   - component: {fileID: 5216745739519534560}
   - component: {fileID: 5216745739519534565}
+  - component: {fileID: -2239402921408360118}
   m_Layer: 7
   m_Name: Small Red
   m_TagString: Enemy
@@ -268,10 +269,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00074499846, y: -0.07714214}
+  m_Offset: {x: 0.00074499846, y: -0.01506789}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.28125}
     oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 0.8, y: 0.64}
     adaptiveTilingThreshold: 0.5
@@ -279,7 +280,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.20098343, y: 0.16573401}
+  m_Size: {x: 0.1791034, y: 0.15037988}
   m_EdgeRadius: 0
 --- !u!50 &5216745739519534560
 Rigidbody2D:
@@ -301,7 +302,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &5216745739519534565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,9 +317,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 20
   speed: 1
-  maxHealth: 100
+  maxHealth: 200
   health: 0
   isFacingLeft: 0
   range: {fileID: 5216745738693874904}
   attackPoint: {fileID: 5216745739484258019}
   projectile: {fileID: 7219317430973544227, guid: 6fa46bd02e8d98a49bb980d3479bd969, type: 3}
+--- !u!114 &-2239402921408360118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216745739519535646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885a509803689624e8d1991cb0ae6a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 2853768090607060407, guid: cfb2523e21b3f1948ad1cae7eca57881, type: 3}

@@ -16,13 +16,14 @@ public class MissileTurret : MonoBehaviour, IShootable
         StartCoroutine(Relaod());
     }
 
-    public void Shoot()
+    public void Shoot(int damage)
     {
         if (readyToFire)
         {
             activeMissile.GetComponent<Animator>().SetTrigger("Fly");
             activeMissile.GetComponent<MissileScript>().target = gameObject.transform.parent.GetComponent<TurretScript>().target;
             activeMissile.GetComponent<BulletScript>().speed = missileSpeed;
+            activeMissile.GetComponent<BulletScript>().damage = damage;
             activeMissile.transform.parent = projectileContainer.transform;
             readyToFire = false;
             StartCoroutine(Relaod());

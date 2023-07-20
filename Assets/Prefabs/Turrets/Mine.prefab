@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 132500945425569264}
   - component: {fileID: 132500945425569265}
   - component: {fileID: 132500945425569263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce83ff98c4815914e9981d3086cb61b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 400
   rangeBox: {fileID: 3795711541820600491}
   turretSpot: {fileID: 263791490363292784, guid: 3bb2a738d8332ef4d8b3324d441d57cd, type: 3}
 --- !u!1 &3795711541452069303
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 3795711541820600485}
   - component: {fileID: 3795711541820600484}
   - component: {fileID: 3795711541820600491}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Range Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}

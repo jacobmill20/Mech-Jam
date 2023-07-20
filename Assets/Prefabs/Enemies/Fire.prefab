@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 2627472591508265726}
   - component: {fileID: 2627472591508265721}
   - component: {fileID: 2627472591508265720}
+  - component: {fileID: 2924109343489114396}
   - component: {fileID: 2627472591508265724}
+  - component: {fileID: 867532065096217858}
   m_Layer: 7
   m_Name: Fire
   m_TagString: Enemy
@@ -135,6 +137,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.39064214, y: 0.24467304}
   m_EdgeRadius: 0
+--- !u!50 &2924109343489114396
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627472591508265722}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!114 &2627472591508265724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,12 +172,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0.35
   speed: 1
-  maxHealth: 100
+  maxHealth: 500
   health: 0
   isFacingLeft: 0
   range: {fileID: 2627472592609425125}
   attackPoint: {fileID: 2627472591791238520}
   projectile: {fileID: 565865564753609554, guid: b44dc0d05a82ccf4db047961a373c803, type: 3}
+--- !u!114 &867532065096217858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2627472591508265722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885a509803689624e8d1991cb0ae6a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 2853768090607060407, guid: cfb2523e21b3f1948ad1cae7eca57881, type: 3}
 --- !u!1 &2627472591791238523
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +234,7 @@ GameObject:
   - component: {fileID: 2627472592609425127}
   - component: {fileID: 2627472592609425124}
   - component: {fileID: 2627472592609425125}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +263,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2627472592609425121}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

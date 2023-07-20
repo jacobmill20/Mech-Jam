@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2808483480780027348}
   - component: {fileID: 7713410990629799064}
   - component: {fileID: -2927283269988614999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RPG
   m_TagString: Untagged
   m_Icon: {fileID: 0}

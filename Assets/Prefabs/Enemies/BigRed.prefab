@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4272300596384579316}
   - component: {fileID: 4272300596384579315}
   - component: {fileID: 4272300596384579314}
-  m_Layer: 7
+  m_Layer: 11
   m_Name: Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4272300596384579318}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -157,7 +157,9 @@ GameObject:
   - component: {fileID: 4272300597133322904}
   - component: {fileID: 4272300597133322905}
   - component: {fileID: 4272300597133322906}
+  - component: {fileID: -5681907904398080325}
   - component: {fileID: 4272300597133322902}
+  - component: {fileID: -2989654633636249507}
   m_Layer: 7
   m_Name: BigRed
   m_TagString: Enemy
@@ -280,6 +282,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.39064214, y: 0.24467304}
   m_EdgeRadius: 0
+--- !u!50 &-5681907904398080325
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272300597133322908}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!114 &4272300597133322902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,9 +317,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 20
   speed: 1
-  maxHealth: 100
+  maxHealth: 400
   health: 0
   isFacingLeft: 0
   range: {fileID: 4272300596384579314}
   attackPoint: {fileID: 4272300596851061369}
   projectile: {fileID: 6409689202838310113, guid: 3c2339d7468966c4fa657da3a56e571c, type: 3}
+--- !u!114 &-2989654633636249507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4272300597133322908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885a509803689624e8d1991cb0ae6a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 2853768090607060407, guid: cfb2523e21b3f1948ad1cae7eca57881, type: 3}

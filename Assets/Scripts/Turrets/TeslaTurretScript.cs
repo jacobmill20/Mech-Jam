@@ -17,13 +17,13 @@ public class TeslaTurretScript : MonoBehaviour, IShootable
         damageArcs = new List<GameObject>();
     }
 
-    public void Shoot()
+    public void Shoot(int damage)
     {
         foreach (GameObject t in rangeBox.targets)
         {
             //Calculate length of arc
             float distance = Vector2.Distance(attackPoint.position, t.transform.position);
-            int idx = (int)Mathf.Floor((distance / 8f) * 6f);
+            int idx = (int)Mathf.Floor((distance / 8.5f) * 6f);
 
             GameObject arc = Instantiate(arcs[idx], attackPoint.position, attackPoint.rotation, projectileContainer.transform);
             damageArcs.Add(arc);
@@ -37,6 +37,7 @@ public class TeslaTurretScript : MonoBehaviour, IShootable
             StartCoroutine(DespawnArcs());
 
             //Damage the target somehow
+            t.GetComponent<EnemyController>().health -= damage;
         }
     }
 

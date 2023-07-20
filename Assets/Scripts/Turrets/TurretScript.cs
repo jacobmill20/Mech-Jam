@@ -5,16 +5,16 @@ using UnityEngine;
 public class TurretScript : MonoBehaviour
 {
     public float rotationSpeed, shootInterval;
-    public int maxHealth, health;
+    public int price, maxHealth, health, damage;
     public bool isFacingLeft;
     
     [SerializeField] private GameObject turretHead;
     [SerializeField] private GameObject battery;
     [SerializeField] private RangeBoxScript rangeBox;
-    [SerializeField] private GameObject destroyedTurret;
+    [SerializeField] private GameObject destroyedTurret, E;
 
     public GameObject target { get; private set; }
-    private bool lockedOn;
+    private bool lockedOn, playerPresent, active;
     private float shootTimer;
 
     private void Start()
@@ -29,6 +29,7 @@ public class TurretScript : MonoBehaviour
         FindClosestTarget();
         RotateHead();
         Shoot();
+        CheckForActivate();
     }
 
     private void UpdateHealth()
@@ -110,7 +111,7 @@ public class TurretScript : MonoBehaviour
         //If locked on and fire interval waited, shoot
         if(lockedOn && shootTimer >= shootInterval)
         {
-            turretHead.GetComponent<IShootable>().Shoot();
+            turretHead.GetComponent<IShootable>().Shoot(damage);
             shootTimer = 0f;
         }
 
@@ -140,5 +141,70 @@ public class TurretScript : MonoBehaviour
             if (!bulletScript.undestroyable)
                 Destroy(collision.gameObject);
         }
+
+        if (collision.tag == "Player")
+        {
+            playerPresent = true;
+            E.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            playerPresent = false;
+            E.SetActive(false);
+
+            if (active)
+            {
+                Deactivate();
+            }
+        }
+    }
+
+    public int GetRepairPrice()
+    {
+        if (health < 0)
+            health = 0;
+
+        return (int)((1f - (float)health / maxHealth) * price * 0.8f);
+    }
+
+    public int GetSellPrice()
+    {
+        return (int)(price * 0.5f);
+    }
+
+    public void CheckForActivate()
+    {
+        if (playerPresent && Input.GetKeyDown(KeyCode.E))
+        {
+            if (!active)
+            {
+                Activate();
+            }
+            else
+            {
+                Deactivate();
+            }
+        }
+    }
+
+    private void Activate()
+    {
+        ConstructedTurretButtonsScript.instance.ActivateTurret(gameObject);
+        active = true;
+
+        E.SetActive(false);
+    }
+
+    private void Deactivate()
+    {
+        ConstructedTurretButtonsScript.instance.DeactivateTurret();
+        active = false;
+
+        if (playerPresent)
+            E.SetActive(true);
     }
 }

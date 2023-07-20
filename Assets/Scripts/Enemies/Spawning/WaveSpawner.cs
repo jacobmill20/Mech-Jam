@@ -98,11 +98,13 @@ public class WaveSpawner : MonoBehaviour
     {
         if(waveIdx < 10)
         {
-            Instantiate(enemy, spawners[spawnIdx].position, spawners[spawnIdx].rotation);
+            GameObject newEnemy = Instantiate(enemy, spawners[spawnIdx].position, spawners[spawnIdx].rotation);
+            newEnemy.transform.Translate(0f, newEnemy.transform.position.y - newEnemy.GetComponent<Collider2D>().bounds.min.y, 0f);
         }
         else
         {
-            Instantiate(enemy, spawners[spawnIdx].position, spawners[spawnIdx].rotation);
+            GameObject newEnemy = Instantiate(enemy, spawners[spawnIdx].position, spawners[spawnIdx].rotation);
+            newEnemy.transform.Translate(0f, newEnemy.transform.position.y - newEnemy.GetComponent<Collider2D>().bounds.min.y, 0f);
             spawnIdx++;
             if (spawnIdx > spawners.Count - 1)
                 spawnIdx = 0;

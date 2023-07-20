@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Mine : MonoBehaviour
 {
-    public float damage;
+    public int damage;
     
     [SerializeField] private RangeBoxScript rangeBox;
     [SerializeField] private GameObject turretSpot;
@@ -14,10 +14,13 @@ public class Mine : MonoBehaviour
         if(collision.tag == "Enemy")
         {
             GetComponent<Animator>().SetTrigger("Splode");
-            transform.Translate(new Vector3(0f, 1.28f, 0f));
-        }
 
-        //Deal damage to everything in range box
+            //Deal damage to everything in range box
+            foreach (GameObject t in rangeBox.targets)
+            {
+                t.GetComponent<EnemyController>().health -= damage;
+            }
+        }
     }
 
     public void DestroyMine()

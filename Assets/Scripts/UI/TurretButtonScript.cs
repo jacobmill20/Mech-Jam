@@ -47,14 +47,18 @@ public class TurretButtonScript : MonoBehaviour
 
     public void ConstructTurret(GameObject turret)
     {
-        //Deactivate the spot, hide it, then place a turret
-        DeactivateSpot();
-        ActiveSpot.SetActive(false);
-        GameObject newTurret = Instantiate(turret, ActiveSpot.transform.position, Quaternion.identity);
-        if (ActiveSpot.GetComponent<TurretSpotScript>().isFacingLeft && !newTurret.name.Contains("Mine"))
+        //If have enough money
+        if (EconomySystem.instance.CheckPrice(turret.GetComponent<TurretScript>().price))
         {
-            newTurret.transform.eulerAngles = new Vector3(0f, 180f, 0f);
-            newTurret.GetComponent<TurretScript>().isFacingLeft = true;
+            //Deactivate the spot, hide it, then place a turret
+            DeactivateSpot();
+            ActiveSpot.SetActive(false);
+            GameObject newTurret = Instantiate(turret, ActiveSpot.transform.position, Quaternion.identity);
+            if (ActiveSpot.GetComponent<TurretSpotScript>().isFacingLeft && !newTurret.name.Contains("Mine"))
+            {
+                newTurret.transform.eulerAngles = new Vector3(0f, 180f, 0f);
+                newTurret.GetComponent<TurretScript>().isFacingLeft = true;
+            }
         }
     }
     
@@ -81,7 +85,7 @@ public class TurretButtonScript : MonoBehaviour
             turretButtons[i].gameObject.SetActive(true);
         }
 
-        E.SetActive(true);
+        //E.SetActive(true);
     }
 
     private void DisableButtonsInteract()
@@ -91,6 +95,8 @@ public class TurretButtonScript : MonoBehaviour
         {
             turretButtons[i].interactable = false;
         }
+
+        E.SetActive(false);
     }
 
     private void EnableButtonsInteract()
@@ -101,6 +107,8 @@ public class TurretButtonScript : MonoBehaviour
             if(unlocks[i] == true)
                 turretButtons[i].interactable = true;
         }
+
+        E.SetActive(true);
     }
 
 }

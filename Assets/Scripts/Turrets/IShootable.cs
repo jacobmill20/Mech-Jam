@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IShootable
 {
-    public void Shoot();
+    public void Shoot(int damage);
 }

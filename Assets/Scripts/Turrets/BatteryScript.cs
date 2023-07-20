@@ -14,6 +14,7 @@ public class BatteryScript : MonoBehaviour
     }
     public void UpdateHealth(int idx)
     {
+        if(idx >= 0 && idx < powerLevels.Length)
         mySprite.sprite = powerLevels[idx];
     }
 }

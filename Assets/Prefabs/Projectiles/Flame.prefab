@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 759926906035768497}
   - component: {fileID: 1759105428064033511}
   - component: {fileID: 1437743738924137519}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Flame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 8919341441121299099}
   - component: {fileID: 1336022751684863821}
   - component: {fileID: 8316061468535146844}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Bullets-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

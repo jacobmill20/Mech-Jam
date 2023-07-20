@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public float fireRate, speed;
-    public int maxHealth, health;
+    public int maxHealth, health, money;
     public bool isFacingLeft;
 
     [SerializeField] private EnemyRange range;
@@ -65,7 +65,6 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            Debug.Log("Target Accquired");
             target = range.targets[0];
             attackPoint.LookAt(target.transform);
             attackPoint.right = attackPoint.forward;
@@ -85,7 +84,6 @@ public class EnemyController : MonoBehaviour
         //If locked on and fire interval waited, shoot
         if (lockedOn && shootTimer >= fireRate)
         {
-            Debug.Log("Spawning Bullet");
             Instantiate(projectile, attackPoint.position, attackPoint.rotation, attackPoint.transform);
 
             shootTimer = 0f;
@@ -98,8 +96,9 @@ public class EnemyController : MonoBehaviour
 
     private void DestroyTank()
     {
-        //Create new dead turret then disable turret
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        EconomySystem.instance.AddMoney(money);
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

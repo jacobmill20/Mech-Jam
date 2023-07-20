@@ -42,10 +42,10 @@ public class WaveSpawner : MonoBehaviour
                 Debug.Log("Easy number of enemies (1-3)");
                 break;
             case 1:
-                Debug.Log("Medium number of waves (3-5)");
+                Debug.Log("Medium number of enemies (3-5)");
                 break;
             case 2:
-                Debug.Log("Hard number of waves (6-10)");
+                Debug.Log("Hard number of enemies (6-10)");
                 break;
 
         }

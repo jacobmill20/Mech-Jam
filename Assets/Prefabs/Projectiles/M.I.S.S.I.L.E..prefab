@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 134003837486334293}
   - component: {fileID: 4623844831595602204}
   - component: {fileID: 2154203357065186202}
-  - component: {fileID: 5613880030438975139}
   m_Layer: 9
   m_Name: M.I.S.S.I.L.E.
   m_TagString: Untagged
@@ -140,7 +139,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.04082775, y: -0.005277857}
@@ -168,19 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c693b39ac22354f8ba2b315a2383e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 1
   damage: 100
   undestroyable: 0
---- !u!114 &5613880030438975139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8320931299119197657}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6ab33678134004469fd5df261b3ba19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}

@@ -39,7 +39,10 @@ public class EnemyController : MonoBehaviour
         {
             anim.SetBool("Driving", true);
             transform.position += transform.right * speed * Time.deltaTime;
-
+        }
+        else
+        {
+            anim.SetBool("Driving", false);
         }
     }
     private void UpdateHealth()
@@ -57,9 +60,11 @@ public class EnemyController : MonoBehaviour
             target = null;
         }
         else
-        {   
+        {
+            Debug.Log("Target Accquired");
             target = range.targets[0];
             attackPoint.LookAt(target.transform);
+            attackPoint.right = attackPoint.forward;
             lockedOn = true;
         }
 
@@ -76,9 +81,8 @@ public class EnemyController : MonoBehaviour
         //If locked on and fire interval waited, shoot
         if (lockedOn && shootTimer >= fireRate)
         {
-            activeMissile = Instantiate(projectile, attackPoint.position, attackPoint.rotation, container.transform);
-            activeMissile.GetComponent<Animator>().SetTrigger("Fly");
-            activeMissile.GetComponent<MissileScript>().target = target;
+            Debug.Log("Spawning Bullet");
+            activeMissile = Instantiate(projectile, attackPoint.position, attackPoint.rotation);
 
             shootTimer = 0f;
         }

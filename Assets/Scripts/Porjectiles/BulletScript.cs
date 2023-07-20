@@ -7,7 +7,7 @@ public class BulletScript : MonoBehaviour
 {
     public float speed;
     public int damage;
-    public bool undestroyable;
+    public bool undestroyable, infinite;
 
     private float flightTime = 5f;
 
@@ -16,7 +16,8 @@ public class BulletScript : MonoBehaviour
     {
         Move();
 
-        flightTime -= Time.deltaTime;
+        if(!infinite)
+            flightTime -= Time.deltaTime;
         if(flightTime <= 0)
         {
             Destroy(gameObject);

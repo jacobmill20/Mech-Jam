@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 134003837486334293}
   - component: {fileID: 4623844831595602204}
   - component: {fileID: 2154203357065186202}
+  - component: {fileID: -9181011805192460779}
   m_Layer: 9
   m_Name: M.I.S.S.I.L.E.
   m_TagString: Untagged
@@ -170,3 +171,17 @@ MonoBehaviour:
   speed: 1
   damage: 100
   undestroyable: 0
+  infinite: 0
+--- !u!114 &-9181011805192460779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8320931299119197657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 885a509803689624e8d1991cb0ae6a11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosion: {fileID: 2853768090607060407, guid: cfb2523e21b3f1948ad1cae7eca57881, type: 3}

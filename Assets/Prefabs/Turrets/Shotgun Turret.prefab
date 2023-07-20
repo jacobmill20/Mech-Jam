@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 6624004884597047441}
   - component: {fileID: 6624004884597047440}
   - component: {fileID: 6624004884597047455}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Range Box
   m_TagString: Turret
   m_Icon: {fileID: 0}

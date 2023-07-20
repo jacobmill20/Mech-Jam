@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 8461711244841317065}
   - component: {fileID: 8461711244841317064}
   - component: {fileID: 8461711244841317063}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Range Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}

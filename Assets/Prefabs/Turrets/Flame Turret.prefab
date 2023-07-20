@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 7968950348179214597}
   - component: {fileID: 7968950348179214596}
   - component: {fileID: 7968950348179214603}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Range Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}

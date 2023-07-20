@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicWeaponScript : MonoBehaviour
+public class ShotgunScript : MonoBehaviour
 {
-    public GameObject bulletContainer, attackPoint, projectile;
+    public GameObject bulletContainer, projectile;
+    public GameObject[] attackPoints;
     public float shootInterval;
     public int damage;
 
@@ -45,24 +46,36 @@ public class BasicWeaponScript : MonoBehaviour
         //Flip Attack point
         if (attackPointFlipped ^ spriteRenderer.flipY)
         {
-            Vector2 pos = attackPoint.transform.localPosition;
-            attackPoint.transform.localPosition = new Vector2(pos.x, -pos.y);
+            foreach (GameObject a in attackPoints)
+            {
+                Vector2 pos = a.transform.localPosition;
+                a.transform.localPosition = new Vector2(pos.x, -pos.y);
+            }
             attackPointFlipped = !attackPointFlipped;
         }
     }
 
     private void Shoot()
     {
-        //If interval waited, shoot
+        //If locked on and fire interval waited, shoot
         if (Input.GetMouseButton(0) && shootTimer >= shootInterval)
         {
-            GameObject newBullet = Instantiate(projectile, attackPoint.transform.position, attackPoint.transform.rotation, bulletContainer.transform);
-            newBullet.GetComponent<BulletScript>().damage = damage;
+            foreach (GameObject a in attackPoints)
+            {
+                //Spawn projectiles
+                for (int i = 0; i < 4; i++)
+                {
+                    Quaternion projRotation = a.transform.rotation;
+                    projRotation.eulerAngles += new Vector3(0f, 0f, Random.Range(-6f, 6f));
+                    GameObject newBullet = Instantiate(projectile, a.transform.position, projRotation, bulletContainer.transform);
+                    newBullet.GetComponent<BulletScript>().damage = damage;
+                }
+            }
             shootTimer = 0f;
         }
 
         //Add to timer
-        if(shootTimer < shootInterval)
+        if (shootTimer < shootInterval)
             shootTimer += Time.deltaTime;
     }
 }

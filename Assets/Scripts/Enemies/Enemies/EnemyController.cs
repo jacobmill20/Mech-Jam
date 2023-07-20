@@ -82,7 +82,7 @@ public class EnemyController : MonoBehaviour
         if (lockedOn && shootTimer >= fireRate)
         {
             Debug.Log("Spawning Bullet");
-            activeMissile = Instantiate(projectile, attackPoint.position, attackPoint.rotation);
+            activeMissile = Instantiate(projectile, attackPoint.position, attackPoint.rotation, container.transform);
 
             shootTimer = 0f;
         }

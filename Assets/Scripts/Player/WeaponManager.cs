@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject activeGun;
+    
+    public void SwapGuns(int newGun)
     {
-        
-    }
+        activeGun.SetActive(false);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        transform.GetChild(newGun).gameObject.SetActive(true);
     }
 }

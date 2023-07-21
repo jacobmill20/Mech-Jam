@@ -325,7 +325,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58559217}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 19.79, y: -1.98, z: -0.022580242}
+  m_LocalPosition: {x: 19.79, y: -2.81, z: -0.022580242}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2853,7 +2853,6 @@ MonoBehaviour:
   - {fileID: 663323710}
   - {fileID: 1207968535}
   - {fileID: 1016653579}
-  unlocks: 0101010101010101
 --- !u!95 &1431115541
 Animator:
   serializedVersion: 5

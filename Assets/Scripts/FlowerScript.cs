@@ -12,6 +12,12 @@ public class FlowerScript : MonoBehaviour
     private void Awake()
     {
         mySprite = gameObject.GetComponent<SpriteRenderer>();
+        health = maxHealth;
+    }
+
+    private void Update()
+    {
+        UpdateHealth();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,8 +37,8 @@ public class FlowerScript : MonoBehaviour
 
     public void UpdateHealth()
     {
-        if (health <= 0) { }
-            //End game
+        if (health <= 0)
+            GameManager.instance.EndGame();
         int idx = (health * 10) / maxHealth;
 
         if (idx >= 0 && idx < powerLevels.Length)

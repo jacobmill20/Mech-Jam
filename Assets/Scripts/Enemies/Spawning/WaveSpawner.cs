@@ -101,6 +101,10 @@ public class WaveSpawner : MonoBehaviour
             GameObject newEnemy = Instantiate(enemy, spawners[spawnIdx].position, spawners[spawnIdx].rotation);
             newEnemy.transform.Translate(0f, newEnemy.transform.position.y - newEnemy.GetComponent<Collider2D>().bounds.min.y, 0f);
         }
+        else if(waveIdx > 50)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Credit Scene");
+        }
         else
         {
             GameObject newEnemy = Instantiate(enemy, spawners[spawnIdx].position, spawners[spawnIdx].rotation);

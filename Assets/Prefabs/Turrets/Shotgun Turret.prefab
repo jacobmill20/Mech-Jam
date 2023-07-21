@@ -583,7 +583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 40
   shootInterval: 2
-  price: 100
+  price: 750
   maxHealth: 300
   health: 0
   damage: 40

@@ -11,5 +11,9 @@ public class WeaponManager : MonoBehaviour
         activeGun.SetActive(false);
 
         transform.GetChild(newGun).gameObject.SetActive(true);
+
+        activeGun = transform.GetChild(newGun).gameObject;
+
+        activeGun.SetActive(true);
     }
 }

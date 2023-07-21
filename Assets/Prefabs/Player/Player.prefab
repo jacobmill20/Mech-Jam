@@ -32,7 +32,7 @@ Transform:
   m_Children:
   - {fileID: 685888624}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 7
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &24791870
 SpriteRenderer:
@@ -103,7 +103,7 @@ MonoBehaviour:
   attackPoints:
   - {fileID: 685888623}
   shootInterval: 0.05
-  damage: 1
+  damage: 3
 --- !u!1 &58214666
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,7 +237,7 @@ MonoBehaviour:
   attackPoint: {fileID: 773558878}
   projectile: {fileID: 2616741753514149396, guid: 5553b06a72f24af4f9848cc045e95f97, type: 3}
   shootInterval: 0.8
-  damage: 1
+  damage: 10
 --- !u!1 &211255242
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +270,7 @@ Transform:
   m_Children:
   - {fileID: 1519542516}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &211255244
 SpriteRenderer:
@@ -340,7 +340,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1519542515}
   projectile: {fileID: 7845972860849653570, guid: 55e7ffcbf1664e8439a14337f5c45037, type: 3}
   shootInterval: 0.15
-  damage: 2
+  damage: 5
 --- !u!1 &299954932
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +404,7 @@ Transform:
   m_Children:
   - {fileID: 58214667}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 17
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &356234325
 SpriteRenderer:
@@ -472,9 +472,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletContainer: {fileID: 0}
   attackPoint: {fileID: 58214666}
-  projectile: {fileID: 565865564753609554, guid: e29ce735e56cd8647a7cb3ee1b23ba47, type: 3}
+  projectile: {fileID: 6409689202838310113, guid: 3c2339d7468966c4fa657da3a56e571c, type: 3}
   shootInterval: 2
-  damage: 0
+  damage: 1000
 --- !u!1 &378458650
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +507,7 @@ Transform:
   m_Children:
   - {fileID: 1447904795}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &378458652
 SpriteRenderer:
@@ -577,7 +577,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1447904794}
   projectile: {fileID: 7845972860849653570, guid: 55e7ffcbf1664e8439a14337f5c45037, type: 3}
   shootInterval: 0.2
-  damage: 1
+  damage: 5
 --- !u!1 &453338616
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +858,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1100545715}
   projectile: {fileID: 7845972860849653570, guid: 55e7ffcbf1664e8439a14337f5c45037, type: 3}
   shootInterval: 0.8
-  damage: 1
+  damage: 12
 --- !u!1 &616984720
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,7 +992,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1444517871}
   projectile: {fileID: 7845972860849653570, guid: 55e7ffcbf1664e8439a14337f5c45037, type: 3}
   shootInterval: 1
-  damage: 1
+  damage: 10
 --- !u!1 &685888623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1056,7 @@ Transform:
   m_Children:
   - {fileID: 576371172}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &747281020
 SpriteRenderer:
@@ -1126,7 +1126,7 @@ MonoBehaviour:
   attackPoint: {fileID: 576371171}
   projectile: {fileID: 927017983596914321, guid: 73edad4a5c6ebd94db663b6acf97bf7e, type: 3}
   shootInterval: 3
-  damage: 0
+  damage: 400
 --- !u!1 &773558878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,7 +1224,7 @@ Transform:
   - {fileID: 2016002783}
   - {fileID: 1352315872}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 6
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &916721144
 SpriteRenderer:
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   - {fileID: 2016002782}
   - {fileID: 1352315871}
   shootInterval: 1.5
-  damage: 1
+  damage: 10
 --- !u!1 &922644995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,7 +1401,7 @@ MonoBehaviour:
   attackPoint: {fileID: 954802437}
   projectile: {fileID: 7845972860849653570, guid: b4e830b572e605d43b7944f9190ef4bb, type: 3}
   shootInterval: 1
-  damage: 0
+  damage: 20
 --- !u!1 &954802437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,7 +1465,7 @@ Transform:
   m_Children:
   - {fileID: 299954933}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &957863080
 SpriteRenderer:
@@ -1535,7 +1535,7 @@ MonoBehaviour:
   attackPoint: {fileID: 299954932}
   projectile: {fileID: 2616741753514149396, guid: e6d3233579f9f7f47bbf56ac7e2015ef, type: 3}
   shootInterval: 2
-  damage: 0
+  damage: 45
 --- !u!1 &1087669278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1630,7 @@ Transform:
   m_Children:
   - {fileID: 542336661}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1102499746
 SpriteRenderer:
@@ -1700,7 +1700,7 @@ MonoBehaviour:
   attackPoint: {fileID: 542336660}
   projectile: {fileID: 2616741753514149396, guid: 94d6ce0b50ac54546b5457af5fe2f255, type: 3}
   shootInterval: 0.15
-  damage: 0
+  damage: 7
 --- !u!1 &1171637040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,7 +1889,7 @@ Transform:
   - {fileID: 1994228201}
   - {fileID: 1087669279}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1457129276
 SpriteRenderer:
@@ -1961,7 +1961,7 @@ MonoBehaviour:
   - {fileID: 1994228200}
   - {fileID: 1087669278}
   shootInterval: 1.5
-  damage: 1
+  damage: 10
 --- !u!1 &1519542515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,7 +2056,7 @@ Transform:
   m_Children:
   - {fileID: 478821312}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1723896510
 SpriteRenderer:
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   attackPoints:
   - {fileID: 478821311}
   shootInterval: 1.5
-  damage: 1
+  damage: 10
 --- !u!1 &1993949153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2160,7 +2160,7 @@ Transform:
   m_Children:
   - {fileID: 2077993594}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1993949155
 SpriteRenderer:
@@ -2230,7 +2230,7 @@ MonoBehaviour:
   attackPoint: {fileID: 2077993593}
   projectile: {fileID: 2616741753514149396, guid: e7d7f8c103b99af48bd6c39d74449de1, type: 3}
   shootInterval: 0.5
-  damage: 0
+  damage: 150
 --- !u!1 &1994228200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,7 +2387,7 @@ Transform:
   m_Children:
   - {fileID: 616984721}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 12
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2082353922
 SpriteRenderer:
@@ -2457,7 +2457,7 @@ MonoBehaviour:
   attackPoint: {fileID: 616984720}
   projectile: {fileID: 7845972860849653570, guid: b4e830b572e605d43b7944f9190ef4bb, type: 3}
   shootInterval: 3
-  damage: 10
+  damage: 120
 --- !u!1 &2084358125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2490,7 +2490,7 @@ Transform:
   m_Children:
   - {fileID: 825909557}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2084358127
 SpriteRenderer:
@@ -2560,7 +2560,7 @@ MonoBehaviour:
   attackPoint: {fileID: 825909556}
   projectile: {fileID: 565865564753609554, guid: e29ce735e56cd8647a7cb3ee1b23ba47, type: 3}
   shootInterval: 4
-  damage: 50
+  damage: 150
 --- !u!1 &2125451683
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,7 +2593,7 @@ Transform:
   m_Children:
   - {fileID: 2031623948}
   m_Father: {fileID: 5692892296090247611}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2125451685
 SpriteRenderer:
@@ -2663,7 +2663,7 @@ MonoBehaviour:
   attackPoint: {fileID: 2031623947}
   projectile: {fileID: 7845972860849653570, guid: b4e830b572e605d43b7944f9190ef4bb, type: 3}
   shootInterval: 0.02
-  damage: 0
+  damage: 4
 --- !u!1 &5692892295933977545
 GameObject:
   m_ObjectHideFlags: 0
@@ -2704,6 +2704,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5692892296090247611}
+  - component: {fileID: 107994271}
   m_Layer: 6
   m_Name: Weapons
   m_TagString: Untagged
@@ -2727,24 +2728,37 @@ Transform:
   - {fileID: 594376223}
   - {fileID: 922644996}
   - {fileID: 186788077}
-  - {fileID: 1723896509}
-  - {fileID: 1457129275}
-  - {fileID: 916721143}
-  - {fileID: 24791869}
   - {fileID: 378458651}
+  - {fileID: 1723896509}
   - {fileID: 211255243}
   - {fileID: 957863079}
-  - {fileID: 1102499745}
   - {fileID: 2082353921}
+  - {fileID: 1102499745}
+  - {fileID: 1457129275}
   - {fileID: 2084358126}
-  - {fileID: 2125451684}
-  - {fileID: 747281019}
-  - {fileID: 1993949154}
   - {fileID: 356234324}
+  - {fileID: 916721143}
+  - {fileID: 747281019}
+  - {fileID: 2125451684}
+  - {fileID: 24791869}
+  - {fileID: 1993949154}
   - {fileID: 453338617}
   m_Father: {fileID: 5692892296943025814}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &107994271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5692892296090247610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0372768eed587104e81091a4e9f996ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeGun: {fileID: 629692062}
 --- !u!1 &5692892296943025819
 GameObject:
   m_ObjectHideFlags: 0

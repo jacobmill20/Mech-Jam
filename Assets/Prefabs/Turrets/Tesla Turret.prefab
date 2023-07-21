@@ -102,10 +102,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 40
   shootInterval: 0.5
-  price: 100
+  price: 1000
   maxHealth: 400
   health: 0
-  damage: 20
+  damage: 35
   isFacingLeft: 0
   turretHead: {fileID: 6795548560073911579}
   battery: {fileID: 6795548559785383108}

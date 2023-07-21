@@ -9,7 +9,6 @@ public class TurretButtonScript : MonoBehaviour
 
     public GameObject E;
     public Button[] turretButtons;
-    public bool[] unlocks;
 
     private Animator anim;
     private GameObject ActiveSpot;
@@ -48,7 +47,16 @@ public class TurretButtonScript : MonoBehaviour
     public void ConstructTurret(GameObject turret)
     {
         //If have enough money
-        if (EconomySystem.instance.CheckPrice(turret.GetComponent<TurretScript>().price))
+        int price;
+        if(turret.TryGetComponent<TurretScript>(out TurretScript turretScript))
+        {
+            price = turretScript.price;
+        } else
+        {
+            price = 1500;
+        }
+
+        if (EconomySystem.instance.CheckPrice(price))
         {
             //Deactivate the spot, hide it, then place a turret
             DeactivateSpot();
@@ -104,8 +112,7 @@ public class TurretButtonScript : MonoBehaviour
         //Make buttons interactable if unlocked
         for (int i = 0; i < turretButtons.Length; i++)
         {
-            if(unlocks[i] == true)
-                turretButtons[i].interactable = true;
+             turretButtons[i].interactable = true;
         }
 
         E.SetActive(true);

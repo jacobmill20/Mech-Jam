@@ -205,7 +205,7 @@ MonoBehaviour:
   speed: 1
   maxHealth: 100
   health: 0
-  money: 10
+  money: 2
   isFacingLeft: 0
   range: {fileID: 1168638024558412246}
   attackPoint: {fileID: 1168638023460585709}

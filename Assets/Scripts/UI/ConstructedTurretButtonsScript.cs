@@ -65,7 +65,11 @@ public class ConstructedTurretButtonsScript : MonoBehaviour
         EconomySystem.instance.AddMoney(turret.GetSellPrice());
 
         DeactivateTurret();
-        Instantiate(TurretSpot, ActiveTurret.transform.position, ActiveTurret.transform.rotation);
+        GameObject newSpot = Instantiate(TurretSpot, ActiveTurret.transform.position, ActiveTurret.transform.rotation);
+        if (turret.isFacingLeft)
+        {
+            newSpot.GetComponent<TurretSpotScript>().isFacingLeft = true;
+        }
         Destroy(ActiveTurret);
     }
 
